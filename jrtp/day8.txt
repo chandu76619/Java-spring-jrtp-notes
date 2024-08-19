@@ -1,0 +1,173 @@
+
+===================
+02 - Mini Project
+==================
+
+Sample Screens : http://ashokitquotes.s3-website.ap-south-1.amazonaws.com/index.html
+
+1) User Registration
+
+		- Dependent Dropdowns (country, state & city)
+
+		- Dropdowns options should come from database
+
+		- Based on country selection, states should be populated
+
+		- Based on state selection, cities should be populated
+
+		- When Signup is clicked, Generate Random Pwd and send to user in email
+
+2) User Login
+
+		- Validate credentials
+
+		- If user trying to login for first time, display Reset Pwd page
+
+		- After pwd reset, display Dashboard page with random quote
+
+		- We need to fetch random quote from third party rest api (webservice call)
+
+				(REST API URL : https://type.fit/api/quotes)
+
+		- If user trying to login for second time, display dashboard page directley
+
+
+3) Reset Pwd Page
+
+		- This page page will display only when user login for first time
+
+		- This is used to update user password 
+
+4) Dashboard page
+
+		- After successful login, dashboard page will be displayed
+
+		- Dashboard page will display random quote given by third party rest api
+
+		- Get New Quote button will display new random quote
+
+5) Logout
+	
+		- When user logout, then we need to redirect to login page		
+
+
+================
+Database tables
+================
+
+USER_MASTER
+
+	- USER_ID  		INT PK  AUTO_INCREMENT
+	- UNAME  		VARCHAR
+	- EMAIL 		VARCHAR
+	- PWD 			VARCHAR
+	- COUNTRY_ID 	INT
+	- STATE_ID 		INT
+	- CITY_ID 		INT
+	- PWD_UPDATED 	VARCHAR 
+	- CREATED_DATE 	TIMESTAMP
+	- UPDATED_DATE 	TIMESTAMP
+
+
+COUNTRY_MASTER
+
+	- COUNTRY_ID	INT PK	AUTO_INCREMENT
+	- COUNTRY_NAME	VARCHAR
+
+STATES_MASTER
+
+	- STATE_ID		INT PK	AUTO_INCREMENT
+	- STATE_NAME	VARCHAR
+	- COUNTRY_ID	INT
+
+CITIES_MASTER
+
+	- CITY_ID		INT PK	AUTO_INCREMENT
+	- CITY_NAME		VARCHAR
+	- STATE_ID		INT
+
+
+=======================
+Java & UI Components
+=======================
+
+Entity & Repository
+
+	- User.java & UserRepo.java
+	- Country.java & CountryRepo.java
+	- State.java & StateRepo.java
+	- City.java & CityRepo.java
+
+Bindings
+
+	- LoginForm.java
+	- RegisterForm.java
+	- ResetPwdForm.java
+	- QuoteApiResponse.java
+
+Service
+
+	- UserService.java
+
+			- public Map<Integer, String> getCountries( );
+			- public Map<Integer, String> getStates(Integer countryId);
+			- public Map<Integer, String> getCities(Integer stateId);
+			- public User getUser(String email);
+			- public boolean saveUser(RegisterForm formObj);
+			- public User login(LoginForm formObj);
+			- public boolean resetPwd(ResetPwdForm formObj);
+			- private String generatePwd();
+
+	- DashboardService.java
+
+			- public String getQuote( );
+
+Controllers
+
+	- UserController.java
+			
+			- public String index(Model model);
+			- public String login(LoginForm form, Model model);
+			- public String register(Model model);
+			- public String resetPwd(Model model);
+
+			- public Map<Integer, String> loadStates(Integer cid);
+			- public Map<Integer, String> loadCities(Integer sid);
+			- public String userRegister(RegisterForm form, Model model);
+			- public String updatePwd(ResetPwdForm form, Model model);
+			- public String logout (Model model);
+
+	- DashboardController.java
+
+			- public String buildDashboard(Model model);
+			- public String getNewQuote( );
+
+Utils
+
+	- EmailUtils.java
+
+			- public boolean sendEmail(String sub, String body, String to);
+
+	- DataLoader.java (Runner)			
+
+
+Constants
+	
+	- AppConstants.java	
+
+Props
+
+	- AppProps.java	
+
+Exception
+
+	- AppExceptionHandler.java	
+
+Views
+
+	- login.html
+	- register.html
+	- resetPwd.html
+	- dashboard.html
+	- errInfo.html
+	- app.js

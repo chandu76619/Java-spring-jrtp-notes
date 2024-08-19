@@ -1,0 +1,188 @@
+
+==========================================================
+01- Mini Project (Student Enquiry Management Portal)
+==========================================================
+
+Project URL : http://13.232.204.185:8080/
+
+===========================
+Requirements To implement
+===========================
+
+1) Counsellor Registration
+
+2) Counsellor Login
+
+3) Counsellor Dashboard
+
+4) Add Student Enquiry
+
+5) View Student Enquiries
+
+6) Filter Enquiries
+
+7) Forgot Password
+
+
+===========
+DB tables
+===========
+
+COUNSELLORS_INFO   => Counsellor.java  + CounsellorRepo.java
+
+CID  PK
+NAME
+EMAIL
+PWD
+PHNO
+
+
+STU_ENQ_INFO  => StudentEnq.java + StudentEnqRepo.java
+
+ENQ_ID	PK
+NAME
+PHNO
+MODE
+COURSE
+STATUS
+CREATED_DATE
+CID
+
+=====================
+Form Binding Classes
+=====================
+
+DashboardResponse.java
+SearchCriteria.java
+
+===========
+Utilitie
+=========
+
+EmailUtils.java
+
+=========
+Services
+==========
+
+CounsellorService.java
+
+	public String saveCounsellor(Counsellor c);
+ 
+	public Counsellor loginCheck(String email, String pwd);
+
+	public boolean recoverPwd(String email);
+
+	public DashboardResponse getDashboardInfo(Integer cid);
+
+
+EnquiryService.java
+
+	public boolean addEnq(StudentEnq se);
+
+	public List<StudentEnq> getEnquiries(Integer cid, SearchCriteria s);
+
+===============
+Controllers	
+===============
+
+CounsellorsController.java
+
+	public String index(Model model); // display login page
+
+	public String regPage(Model model); // display signup page
+
+	public String recoverPwdPage(Model model); // display fpwd page
+
+	public String handleRegistration(Counsellor c, Model model);
+
+	public String handleLogin(Counsellor c, Model model);
+
+	public String handleForgotPwd(String email, Model model);
+
+	public String buildDashboard(Model model);
+
+
+EnquiryController.java
+
+	public String enqPage(Model model);
+
+	public String addEnquiry(StudentEnq se, Model model);
+
+	public String viewEnquiries(Model model);
+
+	public String filterEnquiries(SearchCriteria sc, Model model);
+
+
+========
+Views	
+========
+
+login.html
+
+register.html
+
+forgotPwd.html
+
+dashboard.html
+
+addEnq.html
+
+viewEnq.html
+
+filtered-enquiries.html
+
+header.html
+
+inc-header.html
+
+
+
+
+
+
+
+
+
+
+=============================
+Email Sending in Spring Boot
+=============================
+
+1) Add "mail-starter" dependency in pom.xml
+
+2) Generate APP pwd for your gmail account
+
+	URL : https://myaccount.google.com/apppasswords
+
+3) Configure SMTP props in application.properties file
+
+4) Inject JavaMailSender to send emails
+
+5) We can use below two classes to create mail
+
+			a) SimpleMessage (plain text data)
+
+			b) MimeMessage (html tags + attachments)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,294 @@
+
+
+=============================================
+Java Real-time Project development  (25-JRTP)
+=============================================
+
+1) Who is your trainer
+
+2) Pre-Requisites
+
+3) Who should join for JRTP
+
+4) Course Content
+
+5) Course Info
+
+6) Doubts Clarification
+
+
+======================
+Who is your Trainer ?
+=======================
+Name : Ashok
+
+Trainer IT Exp : 11+ Yrs Java fullstack 
+
+Training Exp : 8+ Years of training
+
+Note: Ashok IT started 2020 
+
+
+=================
+Pre-Requisites
+=================
+
+1) Core Java
+
+2) Adv Java (JDBC & Servlets)
+
+3) Database (SQL)
+
+4) Web Technologies (UI)
+
+5) Spring Core (IOC & DI) 
+
+6) ORM framework (hibernate/data jpa) - good to have
+
+
+===========================
+Who can attend this jrtp?
+===========================
+
+1) Freshers
+
+2) Career Gap
+
+3) Working Professionals (prod support)
+
+
+================
+Course Content
+=================
+
+Module-1 : Software Industry Info  (3 - 4 days)
+
+Module-2 : Realtime Tools (20+ Tools)
+
+				- Maven & Gradle
+				- Nexus
+				- Git Hub & BitBucket
+				- SonarQube
+				- Junit & Mocking
+				- Jaccoco
+				- Logging (logback)
+				- Putty & EFK 
+				- JMETER
+				- Docker - containerization
+				- Kubernetes (K8S) - orchestration
+				- Jenkins (CI CD) 
+				- Postman - API testing
+				- Swagger - documentation
+				- Kafka (Message Broker)
+				- Redis Cache
+				- JIRA - project mgmt
+
+Module-3 : Mini Projects (2)
+
+Module-4 : Microservices
+
+Module-5 : Major Project
+
+Module-6 : AWS Cloud & Linux Commands (10 days)
+
+Module-7 : Angular (crash course)
+
+Module-8 : Interview Guide
+				 - Resume Preparation
+				 - FAQ's
+				 - Mock Interview
+				 - Company Formalities
+
+============
+Course info
+============
+
+Name : 25-JRTP
+
+Trainer : Mr. Ashok
+
+Duration : 3 Months
+
+Class Timings : 6:00 PM - 7:30 PM
+				7:30 AM - 9:00 AM (from next week)
+
+Material : Daily class notes
+
+Course Fee : 8000 INR (live classes)
+
+			4000 INR (backup videos - 1 year)
+
+
+Doubts Clarification : Whatsapp group
+
+==============================
+Software Industry Information
+==============================
+
+Q-1) What is software project ?
+
+=> Collection of programs
+
+Q-2) Why we need to develop project ?
+
+=> To reduce human efforts (to automate business)
+
+Ex:  online shopping
+	 tickets booking
+	 food order
+	 banking
+
+
+==================
+Types of projects
+==================
+
+3 types of types of projects
+
+1) Scratch development ( 15% )	 
+
+2) Maintenence / support project ( 75 %)
+
+			- Enhancements
+			- CR (Change Request)
+			- Bug fixing
+
+3) Migration project ( 10% )
+
+
+=============================
+Types of software companies
+=============================
+
+1) product based
+
+	Ex: Apple, Ms, Oracle, Amazon, IBM, Google....
+
+		-> pkg is very very high
+
+		-> years_of_exp * 8 to 9 lakhs
+
+		-> Interview will be tough (6 to 7 rounds)
+
+				** DSA
+				** System Design
+				** Design Patterns
+				** Problem Solving
+
+2) service based
+
+	Ex: TCS, HCL, Wipro, CG, CTS, Deloitte, Acc ....
+
+	==> Pkg = years_of_exp * 4 to 5 lakhs 
+
+		** Coding round
+		** DSA
+		** Spring Boot
+		** Microservices
+		** Java 8 features
+		** Tools
+		** Cloud
+
+
+===============
+Types of jobs
+===============
+
+1) Permanent job
+
+2) Contract job
+
+			HCL ----> gave offer  (permanent)
+
+			JPMC ---> project development (contract)
+
+================
+Types of Teams	
+================
+
+1) Onshore team (ppl working at client location)
+
+			- functional team
+			- dev team
+			- testing team
+			- ops team
+
+2) Offshore team (ppl not working at client locations)
+
+			- dev team
+			- testing team
+			- db team
+			- ops team
+
+===============
+Bridge call
+===============
+
+=> Conference meeting for project related discussion
+
+=> We can use any software from below list for bridge call
+
+1) Skype Business
+
+2) MS Teams (90%)
+
+3) WebEx
+
+4) Zoom
+
+
+MoM : Minutes of meeting
+
+		- Summary of meeting
+
+===========
+DL
+==========
+
+=> Distribution List   
+
+			passportteam@tcs.com
+
+			passportdevteam@tcs.com
+
+			passporttestteam@tcs.com
+
+			passportdevopsteam@tcs.com
+
+			passporthydteam@tcs.com
+
+
+=============
+Summary
+=============
+
+1) What is Project
+2) Why to develop software projects
+3) Types of projects
+4) Types of companies
+5) Interview Process
+6) Types of Jobs
+7) Types of Teams
+8) Bridge Calls
+9) Minutes of Meeting
+10) What is Bench in IT
+
+
+
+
+
+
+===================
+Enrollment Process 
+===================
+
+Please complete payment and send below details to 'ashokitpayments@gmail.com'
+
+1) Name : 
+2) Contact Number :
+3) Course Code : 25-JRTP
+4) Timings : 6:00 PM - 7:30 PM
+5) Payment screenshot 
+6) Your Scanned Photo
+
+UPI ID : jyothichintamaneni6594@oksbi

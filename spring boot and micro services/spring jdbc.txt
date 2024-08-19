@@ -1,0 +1,25 @@
+
+MySQL Setup Video : https://www.youtube.com/watch?v=EsAIXPIsyQg
+
+
+# Table creation
+
+create table book (
+	book_id int(10),
+ 	book_name varchar(20), 
+ 	book_price int(10)
+);
+
+----------------------------------------------------------------
+Requirement : Develop SPring JDBC application to perform CRUD operations with book table.
+----------------------------------------------------------------
+
+save ( )
+
+findById (int id)
+
+findAll( )
+
+update (int id, int price)
+
+-------------------------------------------------------------------
